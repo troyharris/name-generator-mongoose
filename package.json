@@ -1,0 +1,22 @@
+{
+  "name": "name-generator-mongoose",
+  "version": "1.0.0",
+  "description": "Creates mongoose collections of first and last names and generates random full names",
+  "main": "name-generator-mongoose.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "name generator",
+    "random name",
+    "person name",
+    "character name",
+    "mongoose name database"
+  ],
+  "author": "Troy Harris",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^5.1.1",
+    "npm": "^6.0.1"
+  }
+}
