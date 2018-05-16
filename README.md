@@ -1,6 +1,8 @@
 # name-generator-mongoose
 This node.js module has two parts. The first part imports a large number of first & last names into the user's MongoDB using Mongoose. The data includes a popularity field to allow filtering based on a name's popularity. It also includes a gender binary field ("M" or "F") for first names.
 
+npm package URL: https://www.npmjs.com/package/name-generator-mongoose
+
 ## Setup
 Install using npm:
 `npm install name-generator-mongoose`
@@ -55,6 +57,7 @@ ng.generateName(options).then((name) => {
 
 ## Data Attributions
 The surname data comes from FiveThirtyEight: https://github.com/fivethirtyeight/data
+
 The first name data comes from the US Social Security Office: https://www.ssa.gov/oact/babynames/background.html
 
 ## Using Your Own Data
