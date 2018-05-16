@@ -5,7 +5,7 @@ npm package URL: https://www.npmjs.com/package/name-generator-mongoose
 
 ## Setup
 Install using npm:
-`npm install name-generator-mongoose`
+`npm install name-generator-mongoose --save`
 
 Connect to your database using Mongoose (outside of the scope of these instructions).
 
