@@ -56,7 +56,8 @@ exports.importNames = () => {
         Promise.all(promises).then(() => {
             return resolve();
         }).catch((err) => {
-            console.log(err);
+            console.error(err);
+            return reject(err);
         });
     });
 };

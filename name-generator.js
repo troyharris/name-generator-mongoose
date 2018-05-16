@@ -2,6 +2,9 @@
 const FirstName = require('./models/firstname');
 const Surname = require('./models/surname');
 
+// Import module
+const impModule = require('./import-names');
+
 function formatName(string) {
     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 }
@@ -54,6 +57,13 @@ exports.generateName = (options = {}) => {
     })
 }
 
-exports.importNames = require("./import").importNames().then(() => {
-    console.log("name-generator-mongoose: Finished import.");
-});
+exports.importNames = () => {
+    return new Promise((resolve, reject) => {
+        impModule.importNames().then(() => {
+            console.log("name-generator-mongoose: Finished import.");
+            return resolve();
+        }).catch((err) => {
+            return reject(err);
+        });
+    })
+}
