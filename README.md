@@ -1,9 +1,19 @@
 # name-generator-mongoose
 This node.js module has two parts. The first part imports a large number of first & last names into the user's MongoDB using Mongoose. The data includes a popularity field to allow filtering based on a name's popularity. It also includes a gender binary field ("M" or "F") for first names.
 
+## Setup
+Install using npm:
+`npm install name-generator-mongoose`
+
+Connect to your database using Mongoose (outside of the scope of these instructions).
+
+Import module:
+`const ng = require("name-generator-mongoose");`
+
 ## Import Data
 To import the data, you can run the importNames function that returns a Promise:
-```const ng = require("./name-generator");
+```
+const ng = require("name-generator-mongoose");
 ng.importNames().then(() => {
     console.log("The names have been imported");
 };
@@ -12,10 +22,10 @@ ng.importNames().then(() => {
 You only need to import once (in fact, if it notices data already in the collection, it will stop itself from importing so as to not cause duplicates).
 
 ## Generating a Random Name
-
 The most basic command is getting a random name name from the entire database:
 
 ```
+const ng = require("name-generator-mongoose");
 ng.generateName().then((name) => {
     console.log(`${name.firstName} ${name.surname} - ${name.gender}`);
     mongoose.disconnect();
