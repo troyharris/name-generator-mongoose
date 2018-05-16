@@ -10,6 +10,8 @@ Connect to your database using Mongoose (outside of the scope of these instructi
 Import module:
 `const ng = require("name-generator-mongoose");`
 
+*Note: Check out the included example.js for a complete script*
+
 ## Import Data
 To import the data, you can run the importNames function that returns a Promise:
 ```
