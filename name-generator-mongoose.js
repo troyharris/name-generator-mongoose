@@ -69,4 +69,4 @@ exports.importNames = () => {
 }
 
 exports.FirstName = FirstName;
-exports.LastName = LastName;
+exports.Surname = Surname;
