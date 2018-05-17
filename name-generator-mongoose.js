@@ -67,3 +67,6 @@ exports.importNames = () => {
         });
     })
 }
+
+exports.FirstName = FirstName;
+exports.LastName = LastName;

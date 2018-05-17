@@ -69,3 +69,11 @@ name,gender('M'/'F'),popularity(int)
 //surname.csv
 name,,popularity(int)
 ```
+
+##Accessing Models
+If you need access to the mongoose models, you can access as such:
+```
+const ng = require("name-generator-mongoose");
+const firstNameModel = ng.FirstName
+const surnameModel = ng.Surname
+```
