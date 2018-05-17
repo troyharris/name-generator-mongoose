@@ -1,6 +1,6 @@
 {
   "name": "name-generator-mongoose",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Creates mongoose collections of first and last names and generates random full names",
   "main": "name-generator-mongoose.js",
   "scripts": {
