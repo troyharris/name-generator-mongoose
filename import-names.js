@@ -1,6 +1,6 @@
 // Some user defined variables.
-const FIRSTNAMEFILE = "firstnames.csv";
-const SURNAMEFILE = "surnames.csv";
+const FIRSTNAMEFILE = "./firstnames.csv";
+const SURNAMEFILE = "./surnames.csv";
 
 // Imports
 const readline = require("readline");
