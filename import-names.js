@@ -1,6 +1,7 @@
-// Some user defined variables.
-const FIRSTNAMEFILE = "./firstnames.csv";
-const SURNAMEFILE = "./surnames.csv";
+// Import files
+const path = require("path");
+const FIRSTNAMEFILE = path.join(__dirname, "/firstnames.csv");
+const SURNAMEFILE = path.join(__dirname, "/surnames.csv");
 
 // Imports
 const readline = require("readline");
